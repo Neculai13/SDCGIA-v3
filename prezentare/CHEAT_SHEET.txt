@@ -1,0 +1,61 @@
+SDCGIA v3 - Fisa de sustinere
+
+IDEea CENTRALA
+Clasificam articole in romana ca umane sau AI. Am adaptat Qwen3.5-4B cu LoRA
+si un cap de decizie, folosind Unsloth. Nu cerem unui chatbot sa ghiceasca.
+
+DATE DE RETINUT
+7.950 texte: 4.524 umane si 3.426 AI.
+Train 5.557, calibrare 1.194, test 1.199.
+Test: 679 umane si 520 AI, toate clasificate corect, prag 0,5.
+Calibrare: 1.193/1.194 corecte. Aceasta nu inlocuieste evaluarea pe test.
+O epoca, 348 pasi, batch efectiv 16, learning rate 0,0002, seed 3407.
+LoRA rank 16 si alpha 16, aproximativ 64,5 milioane parametri antrenabili.
+Context 12.288 tokeni. Nu trunchiem articolele.
+
+DE CE 100%?
+Este scorul observat in acest corpus, nu o promisiune generala. Toate modelele
+din test apar si in train. Avem o singura publicatie si aceeasi metoda de
+generare. Stilul, formatarea sau vocabularul pot fi indicii simple. Nu am izolat
+contributia lor. Este o ipoteza, nu o cauza dovedita.
+
+SCURGERI DE DATE?
+Articolul-sursa, variantele AI si grupurile de similitudine stau intr-o singura
+partitie. Nu exista surse/grupuri sau texte normalizate exacte comune intre
+partitii. Etichetele si metadatele nu intra in predictor. Asta nu certifica
+independenta semantica totala. Surse folosite in experimente anterioare au fost
+reutilizate, deci v3 este exploratoriu, nu un test extern neatins.
+
+CE INSEAMNA CALIBRARE?
+Ajusteaza probabilitatile pe un lot separat. Pragul ramane 0,5. Nu ajustam
+modelul sau pragul dupa ce vedem testul. ECE aproape de zero pe acest lot nu
+garanteaza calibrare buna pe alte domenii.
+
+GENERAREA
+Prompturi in romana cu tema si entitati candidate, fara corpul articolului,
+titlul original sau o lista de fapte esentiale. Entitatile pot avea erori de
+extragere. Pastram toate raspunsurile ne goale, inclusiv cele slabe.
+Qwen si Gemma local prin Ollama/llama.cpp. Generari web prin ChatGPT.
+Etichetele web sunt cele afisate in UI, nu ID-uri API certificate. Setarile
+numerice neexpuse nu sunt inventate in raport.
+
+REZULTATE PER MODEL
+Tabelul foloseste AI din fiecare model si controalele umane asociate surselor.
+Controalele pot fi comune mai multor modele. Nu insumam randurile tabelului.
+Cu 8 sau 15 exemple AI pentru unele variante nu putem face un clasament.
+
+CE S-AR TESTA IN CONTINUARE?
+Alte publicatii, modele absente din train, lungimi si formatare comparabile.
+Un lot cu adevarat nou, stabilit inainte de evaluare. Nu modificam pragul pe el.
+
+REPRODUCERE
+Repository separat: Neculai13/SDCGIA-v3. Datele se descarca automat in Colab.
+Sunt incluse notebookul, corpusul, prompturile, setarile, predictiile si raportul.
+Rezultatele noi se salveaza separat pe Drive. Modelul istoric se transmite
+separat, nu este inclus in Git. O rerulare nu garanteaza un scor identic.
+
+DE EVITAT LA PREZENTARE
+Nu spune: modelul depisteaza orice text AI cu 100%.
+Spune: 1.199/1.199 corecte in testul intern v3, cu limitele descrise.
+Nu prezenta acuratetea calibrarii ca acuratete pe test.
+Nu prezenta intervalele Wilson ca o corectie a dependentei intre surse.

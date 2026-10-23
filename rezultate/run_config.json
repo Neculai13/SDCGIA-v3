@@ -1,0 +1,40 @@
+{
+  "model": "unsloth/Qwen3.5-4B",
+  "max_seq_length": 12288,
+  "seed": 3407,
+  "batch_size": 1,
+  "gradient_accumulation": 16,
+  "epochs": 1,
+  "learning_rate": 0.0002,
+  "lora_rank": 16,
+  "bundle_manifest_sha256": "b982d32417193eb41beef98dd2880a896816c796dd54ef9dfaf0140a3e6ae948",
+  "phase": "full",
+  "no_truncation": true,
+  "runtime_versions": {
+    "unsloth": "2026.10.7",
+    "unsloth_zoo": "2026.10.7",
+    "torch": "2.8.0",
+    "transformers": "5.2.0",
+    "peft": "0.21.2",
+    "trl": "0.22.2",
+    "bitsandbytes": "0.50.2"
+  },
+  "decision_source_sha256": "1b4a9d45965e4cfa93995d634d2104637f2c559595f06b104cc1e94075a45b67",
+  "base_revision": null,
+  "attention_fix": {
+    "policy": "t4_explicit_kv_transformers_selector_v1",
+    "scope": "T4 CUDA float16 K/V heads=4 head_dim=256 mask=None",
+    "versions": {
+      "torch": "2.8.0",
+      "transformers": "5.2.0",
+      "unsloth": "2026.10.7",
+      "unsloth_zoo": "2026.10.7"
+    },
+    "transformers_sdpa_source_sha256": "87f933d1a2d8508df572da5c0748c6b24c22ff2b625796949957dcd86cc57564",
+    "model_weights_changed": false,
+    "dtype_changed": false,
+    "article_text_changed": false,
+    "selector": "explicit_repeat_kv_via_existing_transformers_path"
+  },
+  "attention_fix_source_sha256": "237106bbac04388e8a126a5e78331b5edc7f0e1b6d8756a4c9992633911aad12"
+}

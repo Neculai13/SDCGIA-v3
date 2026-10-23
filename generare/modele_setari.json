@@ -1,0 +1,355 @@
+[
+  {
+    "model": "ChatGPT; Thinking effort Medium",
+    "backend": "chatgpt_web",
+    "generator_run": "chatgpt_web_batch_v1_pilot",
+    "texts": 2,
+    "sampling_profiles": [
+      {}
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Setările numerice ale interfeței web nu sunt expuse. Denumirea modelului este eticheta înregistrată în UI."
+  },
+  {
+    "model": "GPT-5.6 Luna Light",
+    "backend": "chatgpt_web",
+    "generator_run": "chatgpt_web_luna_reverse_001",
+    "texts": 100,
+    "sampling_profiles": [
+      {}
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Setările numerice ale interfeței web nu sunt expuse. Denumirea modelului este eticheta înregistrată în UI."
+  },
+  {
+    "model": "GPT-5.6 Sol",
+    "backend": "chatgpt_web",
+    "generator_run": "chatgpt_web_batch_v1",
+    "texts": 100,
+    "sampling_profiles": [
+      {}
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Setările numerice ale interfeței web nu sunt expuse. Denumirea modelului este eticheta înregistrată în UI."
+  },
+  {
+    "model": "GPT-5.6 Terra Light",
+    "backend": "chatgpt_web",
+    "generator_run": "chatgpt_web_terra_reverse_002",
+    "texts": 100,
+    "sampling_profiles": [
+      {}
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Setările numerice ale interfeței web nu sunt expuse. Denumirea modelului este eticheta înregistrată în UI."
+  },
+  {
+    "model": "GPT-6 Astra Light",
+    "backend": "chatgpt_web",
+    "generator_run": "chatgpt_web_gpt6_astra_reverse_005",
+    "texts": 100,
+    "sampling_profiles": [
+      {}
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Setările numerice ale interfeței web nu sunt expuse. Denumirea modelului este eticheta înregistrată în UI."
+  },
+  {
+    "model": "GPT-6 Luna Light",
+    "backend": "chatgpt_web",
+    "generator_run": "chatgpt_web_gpt6_luna_reverse_003",
+    "texts": 100,
+    "sampling_profiles": [
+      {}
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Setările numerice ale interfeței web nu sunt expuse. Denumirea modelului este eticheta înregistrată în UI."
+  },
+  {
+    "model": "GPT-6 Sol Light",
+    "backend": "chatgpt_web",
+    "generator_run": "chatgpt_web_gpt6_sol_reverse_004",
+    "texts": 100,
+    "sampling_profiles": [
+      {}
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Setările numerice ale interfeței web nu sunt expuse. Denumirea modelului este eticheta înregistrată în UI."
+  },
+  {
+    "model": "GPT-6.1 Sol Light",
+    "backend": "chatgpt_web",
+    "generator_run": "chatgpt_web_gpt61_sol_reverse_006",
+    "texts": 100,
+    "sampling_profiles": [
+      {}
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Setările numerice ale interfeței web nu sunt expuse. Denumirea modelului este eticheta înregistrată în UI."
+  },
+  {
+    "model": "gemma3:1b",
+    "backend": "local",
+    "generator_run": "gemma3_1b_v1_system",
+    "texts": 219,
+    "sampling_profiles": [
+      {
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "gemma3:270m",
+    "backend": "local",
+    "generator_run": "gemma3_270m_v1_system",
+    "texts": 150,
+    "sampling_profiles": [
+      {
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen2.5-0.5b-instruct-q4_k_m",
+    "backend": "local",
+    "generator_run": "qwen2.5-0.5b",
+    "texts": 200,
+    "sampling_profiles": [
+      {
+        "stream": false,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen2.5-1.5b-instruct-q4_k_m",
+    "backend": "local",
+    "generator_run": "qwen2.5-1.5b",
+    "texts": 200,
+    "sampling_profiles": [
+      {
+        "stream": false,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen2.5-3b-instruct-q4_k_m",
+    "backend": "local",
+    "generator_run": "qwen2.5-3b",
+    "texts": 200,
+    "sampling_profiles": [
+      {
+        "stream": false,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen2.5:1.5b",
+    "backend": "ollama",
+    "generator_run": "sampling_qwen2.5:1.5b_conservative",
+    "texts": 30,
+    "sampling_profiles": [
+      {
+        "temperature": 0.3,
+        "top_k": 20,
+        "top_p": 0.8
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [
+      "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b"
+    ],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen2.5:1.5b",
+    "backend": "ollama",
+    "generator_run": "sampling_qwen2.5:1.5b_varied",
+    "texts": 30,
+    "sampling_profiles": [
+      {
+        "temperature": 0.9,
+        "top_k": 20,
+        "top_p": 0.95
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [
+      "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b"
+    ],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen2.5:3b",
+    "backend": "ollama",
+    "generator_run": "sampling_qwen2.5:3b_conservative",
+    "texts": 30,
+    "sampling_profiles": [
+      {
+        "temperature": 0.3,
+        "top_k": 20,
+        "top_p": 0.8
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [
+      "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b"
+    ],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen2.5:3b",
+    "backend": "ollama",
+    "generator_run": "sampling_qwen2.5:3b_varied",
+    "texts": 30,
+    "sampling_profiles": [
+      {
+        "temperature": 0.9,
+        "top_k": 20,
+        "top_p": 0.95
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [
+      "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b"
+    ],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen3.5:0.8b",
+    "backend": "local",
+    "generator_run": "qwen35_08b_v1",
+    "texts": 4,
+    "sampling_profiles": [
+      {
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen3.5:0.8b",
+    "backend": "local",
+    "generator_run": "qwen35_08b_v2_simple",
+    "texts": 10,
+    "sampling_profiles": [
+      {
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen3.5:0.8b",
+    "backend": "local",
+    "generator_run": "qwen35_08b_v3_system",
+    "texts": 861,
+    "sampling_profiles": [
+      {
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen3.5:2b",
+    "backend": "local",
+    "generator_run": "qwen35_2b_v1_system",
+    "texts": 547,
+    "sampling_profiles": [
+      {
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  },
+  {
+    "model": "qwen3.5:4b",
+    "backend": "local",
+    "generator_run": "qwen35_4b_parallel_test",
+    "texts": 213,
+    "sampling_profiles": [
+      {
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.9
+      }
+    ],
+    "per_request_parameters": "prompturi.jsonl",
+    "think_values": [],
+    "model_digests": [],
+    "note": "Parametrii sunt cei înregistrați per cerere."
+  }
+]
